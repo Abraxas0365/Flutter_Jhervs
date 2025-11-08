@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'stat_card.dart';
+import 'recent_card.dart';
 
 class HomeWidget extends StatelessWidget {
   final String username;
@@ -36,7 +37,7 @@ class HomeWidget extends StatelessWidget {
               crossAxisCount: 2,
               mainAxisSpacing: 16,
               crossAxisSpacing: 16,
-              childAspectRatio: 1.5,
+              childAspectRatio: 1.1,
               children: const [
                 StatCard(
                     title: 'Total Balance',
@@ -58,6 +59,8 @@ class HomeWidget extends StatelessWidget {
               ],
             ),
           ),
+          const SizedBox(height: 24),
+
         ],
       ),
     );

@@ -11,19 +11,13 @@ class DashboardPage extends StatefulWidget {
 class _DashboardPageState extends State<DashboardPage> {
   final DashboardController _controller = DashboardController();
 
-  // Add a list of titles corresponding to each page
-  final List<String> _pageTitles = [
-    'Dashboard',
-    'Transactions',
-    'Marketplace',
-    'Accounts',
-  ];
+  
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_pageTitles[_controller.currentIndex]), // Dynamic title
+        title: Text('Pennywise'), // Dynamic title
         actions: [
           IconButton(
             icon: const Icon(Icons.dashboard),
