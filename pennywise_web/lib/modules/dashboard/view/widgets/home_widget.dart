@@ -9,8 +9,8 @@ class HomeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(24.0),
+    return Container(
+      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -34,33 +34,70 @@ class HomeWidget extends StatelessWidget {
           const SizedBox(height: 24),
           Expanded(
             child: GridView.count(
+              shrinkWrap: true,
               crossAxisCount: 2,
               mainAxisSpacing: 16,
               crossAxisSpacing: 16,
               childAspectRatio: 1.1,
               children: const [
                 StatCard(
-                    title: 'Total Balance',
-                    amount: '\$12,000',
-                    change: '+12.5% from last month'),
+                  title: 'Total Balance',
+                  amount: '\$12,000',
+                  change: '+12.5% from last month',
+                ),
                 StatCard(
-                    title: 'Savings',
-                    amount: '\$5,400',
-                    change: '+8.2% from last month'),
+                  title: 'Savings',
+                  amount: '\$5,400',
+                  change: '+8.2% from last month',
+                ),
                 StatCard(
-                    title: 'Income',
-                    amount: '\$3,800',
-                    change: '+5.1% from last month'),
+                  title: 'Income',
+                  amount: '\$3,800',
+                  change: '+5.1% from last month',
+                ),
                 StatCard(
-                    title: 'Expenses',
-                    amount: '\$1,200',
-                    change: '-2.3% from last month',
-                    changeColor: Colors.redAccent),
+                  title: 'Expenses',
+                  amount: '\$1,200',
+                  change: '-2.3% from last month',
+                  changeColor: Colors.redAccent,
+                ),
               ],
             ),
           ),
-          const SizedBox(height: 24),
-
+          const SizedBox(height: 12),
+          Container(
+            alignment: Alignment.centerLeft,
+            decoration: BoxDecoration(
+              color: const Color(0xFF1D1D1D),
+              borderRadius: BorderRadius.circular(16),
+            ),
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Text(
+                  'Recent Activity',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                RecentCard(
+                  type: 'Expense',
+                  date: 'Aug 20, 2023',
+                  ammount: '-₱150.00',
+                  source: 'Groceries',
+                ),
+                RecentCard(
+                  type: 'Expense',
+                  date: 'Aug 20, 2023',
+                  ammount: '-₱150.00',
+                  source: 'Groceries',
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

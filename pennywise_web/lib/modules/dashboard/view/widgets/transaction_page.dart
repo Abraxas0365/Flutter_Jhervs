@@ -8,7 +8,6 @@ class TransactionsPage extends StatelessWidget {
     final Color background = const Color(0xFF191919);
     final Color subBackground = const Color(0xFF1D1D1D);
     final Color highlight = const Color(0xFF630000);
-    final Color dimOrange = Colors.orangeAccent.shade200;
 
     return Scaffold(
       backgroundColor: background,
