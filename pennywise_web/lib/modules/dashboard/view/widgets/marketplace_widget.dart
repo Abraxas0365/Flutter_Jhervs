@@ -37,7 +37,7 @@ class MarketplacePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 24),
               const Text(
                 'Popular Tools',
                 style: TextStyle(
@@ -46,7 +46,7 @@ class MarketplacePage extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 24),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -56,19 +56,19 @@ class MarketplacePage extends StatelessWidget {
                       description: 'Download ready-to-use budget templates.',
                       icon: Icons.insert_drive_file,
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 24),
                     _MarketplaceCard(
                       title: 'Financial Tools',
                       description: 'Explore calculators and planners.',
                       icon: Icons.calculate,
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 24),
                     _MarketplaceCard(
                       title: 'Investment Guides',
                       description: 'Learn about investing and growing wealth.',
                       icon: Icons.trending_up,
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 24),
                     _MarketplaceCard(
                       title: 'Exclusive Offers',
                       description: 'Get discounts on partner services.',
@@ -77,7 +77,7 @@ class MarketplacePage extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 24),
               const Text(
                 'Recommended for You',
                 style: TextStyle(
@@ -86,7 +86,7 @@ class MarketplacePage extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 24),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -96,19 +96,19 @@ class MarketplacePage extends StatelessWidget {
                       description: 'Track your daily expenses easily.',
                       icon: Icons.track_changes,
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 24),
                     _MarketplaceCard(
                       title: 'Loan Calculators',
                       description: 'Calculate your loan payments.',
                       icon: Icons.calculate_outlined,
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 24),
                     _MarketplaceCard(
                       title: 'Tax Helpers',
                       description: 'Get help with your taxes.',
                       icon: Icons.receipt_long,
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 24),
                     _MarketplaceCard(
                       title: 'Goal Planners',
                       description: 'Plan and achieve your financial goals.',
@@ -117,7 +117,7 @@ class MarketplacePage extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 24),
               const Text(
                 'New Arrivals',
                 style: TextStyle(
@@ -126,7 +126,7 @@ class MarketplacePage extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 24),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -136,19 +136,19 @@ class MarketplacePage extends StatelessWidget {
                       description: 'Latest trends in cryptocurrency.',
                       icon: Icons.currency_bitcoin,
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 24),
                     _MarketplaceCard(
                       title: 'Insurance Finder',
                       description: 'Find the best insurance deals.',
                       icon: Icons.security,
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 24),
                     _MarketplaceCard(
                       title: 'Retirement Planners',
                       description: 'Plan for your retirement.',
                       icon: Icons.celebration,
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 24),
                     _MarketplaceCard(
                       title: 'Stock Watchlist',
                       description: 'Monitor your favorite stocks.',
@@ -179,8 +179,8 @@ class _MarketplaceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 280, // Set a fixed width for carousel effect
-      height: 350,
+      width: 200, // Set a fixed width for carousel effect
+      height: 200,
       child: Card(
         color: Theme.of(context).colorScheme.surface,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -195,7 +195,7 @@ class _MarketplaceCard extends StatelessWidget {
                 size: 48,
                 color: Theme.of(context).colorScheme.primary,
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 24),
               Text(
                 title,
                 style: const TextStyle(

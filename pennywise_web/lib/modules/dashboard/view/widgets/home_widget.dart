@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'stat_card.dart';
-import 'recent_card.dart';
 
 class HomeWidget extends StatelessWidget {
   final String username;

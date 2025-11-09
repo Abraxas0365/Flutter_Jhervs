@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../view/widgets/home_widget.dart';
 import '../view/widgets/transaction_page.dart';
-import '../view/widgets/marketplace_page.dart'; // Add this import
+import '../view/widgets/marketplace_widget.dart'; // Add this import
 
 class DashboardModel {
   int currentIndex = 0;
