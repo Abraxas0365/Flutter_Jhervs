@@ -71,11 +71,10 @@ class HomeWidget extends StatelessWidget {
               color: const Color(0xFF1D1D1D),
               borderRadius: BorderRadius.circular(16),
             ),
-            padding: const EdgeInsets.all(16),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text(
+              children: [
+                const Text(
                   'Recent Activity',
                   style: TextStyle(
                     color: Colors.white,
