@@ -1,0 +1,32 @@
+name: pennywise
+description: A new Flutter project for personal finance tracking.
+publish_to: 'none' # Remove this line if you plan to publish the app
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Default Flutter icon package
+  cupertino_icons: ^1.0.8
+
+  # Add this for selecting images from gallery or camera
+  image_picker: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Uncomment and list your assets here (optional)
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
